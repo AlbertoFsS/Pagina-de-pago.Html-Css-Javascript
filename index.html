@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Pagina de cobro</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+      
+   
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="bg-dark">
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h2 class="text-light">Pagando Nuestros Productos</h2>
+    <p class="text-primary">En breve terminara su compra</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-success">Tu Carrito</span>
+        <span class="badge badge-secondary badge-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Primer producto</h6>
+            <small class="text-muted">Breve descripcion  </small>
+          </div>
+          <span class="text-muted">$120.00</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Segundo Producto</h6>
+            <small class="text-muted">Breve descripcion</small>
+          </div>
+          <span class="text-muted">$80.00</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Tercer Producto</h6>
+            <small class="text-muted">Breve descripcion</small>
+          </div>
+          <span class="text-muted">$300.00</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">Codigo de promocion</h6>
+            <small></small>
+          </div>
+          <span class="text-success">-$320.00</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (MX)</span>
+          <strong>$80.00</strong>
+        </li>
+      </ul>
+
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Codigo de Promocion">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Cargar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3 text-light">Informacion de Envio</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row text-light">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Primer Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Validacion del Nombre
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              validacion de apellido es requerida.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 text-light">
+          <label for="username">Nombre de Usuario</label>
+          <div class="input-group text-light">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Nombre de usario requerido
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 text-light">
+          <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="tu@ejmplo.com">
+          <div class="invalid-feedback">
+            Porfavor inserta un email valido.
+          </div>
+        </div>
+
+        <div class="mb-3 text-light">
+          <label for="address">Direccion</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 calle nombre" required>
+          <div class="invalid-feedback">
+           Porfavor insertar la direccion 
+          </div>
+        </div>
+
+        <div class="mb-3 text-light">
+          <label for="address2">segunda calle<span class="text-muted">(Opcional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Departamento o Casa">
+        </div>
+
+        <div class="row text-light">
+          <div class="col-md-5 mb-3">
+            <label for="country">Pais</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Elige...</option>
+              <option>Mexico</option>
+            </select>
+            <div class="invalid-feedback">
+              Selecciona un Pais Valido
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Estado</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">Elige...</option>
+              <option>Nuevo Leon</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 text-light">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip codigo requrido.
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="custom-control custom-checkbox text-light">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">La direccion colocada es la direccion de recibo.</label>
+        </div>
+        <div class="custom-control custom-checkbox text-light">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Guardar la informacion del paquete</label>
+        </div>
+        <hr class="mb-4">
+
+        <h4 class="mb-3 text-light">Metodo de Pago</h4>
+
+        <div class="d-block my-3 text-light">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Tarjeta de credito</label>
+          </div>
+          <div class="custom-control custom-radio text-light">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Tarjeta de Debito</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+        <div class="row text-light">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Nombre de la Tarjeta</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Nombre que aparece en la tarjeta</small>
+            <div class="invalid-feedback">
+              Nombre es requerido
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Numero de Trajeta</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Numero de tarjeta requerido.
+            </div>
+          </div>
+        </div>
+        <div class="row text-light">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiracion</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiracion es requerida
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              codigo de seguridad requerido.
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continuar con la Compra</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">& AlbertoFsS; 2020 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacidad</a></li>
+      <li class="list-inline-item"><a href="#">Terminos</a></li>
+      <li class="list-inline-item"><a href="#">Soporte</a></li>
+    </ul>
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script></body>
+</html>
